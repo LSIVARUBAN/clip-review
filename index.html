@@ -4,13 +4,17 @@ body{font:16px/1.6 -apple-system,system-ui,Segoe UI,Roboto,sans-serif;max-width:
 @media (prefers-color-scheme:dark){body{color:#e8e8ef;background:#15151c}a{color:#9ab8ff}}
 header{display:flex;gap:14px;align-items:center}header img{width:56px;height:56px;border-radius:12px}
 nav a{margin-right:16px}h1{margin:.2em 0}small{opacity:.7}</style></head><body>
-<header><img src="icon.png" alt=""><div><h1>Clip Review</h1><nav><a href="index.html">About</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav></div></header>
+<header><img src="icon.png" alt=""><div><h1>Clip Review</h1><nav><a href="index.html">About</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a><a href="data-deletion.html">Data deletion</a></nav></div></header>
 <p>Clip Review is a personal, non-commercial desktop tool. Its owner uses it to edit short gaming clips on their own computer,
-review them, and place the ones they approve into the <strong>drafts of their own TikTok account</strong>.</p>
-<p>The tool never publishes anything by itself: every video arrives in TikTok as a draft, and the owner decides in the TikTok app
-whether to post it, edit it, or delete it.</p>
+review them, and place the ones they approve into the <strong>drafts of their own TikTok account</strong>, or publish them to their own Instagram account.</p>
+<p>The tool never publishes anything the owner hasn't approved. TikTok videos arrive as drafts, and the owner decides in the TikTok app
+whether to post them. Instagram Reels are published only after the owner approves each one.</p>
 <h2>How it uses TikTok</h2>
 <ul><li><strong>Login Kit</strong> (<code>user.info.basic</code>): to confirm which TikTok account is connected.</li>
 <li><strong>Content Posting API</strong> (<code>video.upload</code>): to upload a finished video to that account's drafts.</li></ul>
+<h2>How it uses Instagram</h2>
+<ul><li><strong>Instagram API with Instagram Login</strong> (<code>instagram_business_basic</code>,
+<code>instagram_business_content_publish</code>): to publish a clip as a Reel on the owner's own Instagram account,
+only after the owner has approved that clip.</li></ul>
 <p>The tool is used only by its owner, with their own account. It is not offered to the public.</p>
 <p>See the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p><hr><p><small>Clip Review is an independent personal project. It is not affiliated with, endorsed by, or sponsored by TikTok. Contact: open an issue on this site's <a href="https://github.com/LSIVARUBAN/clip-review/issues">GitHub repository</a>.</small></p></body></html>
